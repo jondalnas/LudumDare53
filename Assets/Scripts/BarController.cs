@@ -10,7 +10,7 @@ public class BarController : MonoBehaviour {
 	public int insideWidth = 25, insideHeight = 12;
 	public int outsideWidth = 19, outsideHeight = 8;
 
-	private float _targetValue, _value;
+	private float _targetValue = 0.5f, _value = 0.5f;
 
 	public float TargetValue {
 		get { return _targetValue; }
