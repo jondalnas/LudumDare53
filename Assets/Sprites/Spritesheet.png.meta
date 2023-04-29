@@ -2049,13 +2049,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_96
+      name: SnowboardPlayer_straight
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 216
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2070,13 +2070,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_97
+      name: SnowboardPlayer_right
       rect:
         serializedVersion: 2
         x: 8
-        y: 224
+        y: 216
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2091,7 +2091,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_98
+      name: Snowboard_straight
       rect:
         serializedVersion: 2
         x: 16
@@ -2112,7 +2112,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_99
+      name: Snowboard_right
       rect:
         serializedVersion: 2
         x: 24
@@ -2133,7 +2133,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_100
+      name: Tree_small
       rect:
         serializedVersion: 2
         x: 32
@@ -2154,13 +2154,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_101
+      name: Tree_medium
       rect:
         serializedVersion: 2
         x: 40
-        y: 224
-        width: 8
-        height: 8
+        y: 216
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2175,34 +2175,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_102
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 224
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de6a4c90b9db496439765ab9dd8b9b2a
-      internalID: 1427644280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_103
+      name: Tree_big
       rect:
         serializedVersion: 2
         x: 56
-        y: 224
-        width: 8
-        height: 8
+        y: 200
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2212,69 +2191,6 @@ TextureImporter:
       bones: []
       spriteID: e6d7b985c52a6a849b7985ba0ed71967
       internalID: 1769160671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_104
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dbba85c9e7c03647bd2f2835926907b
-      internalID: -1141043841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_105
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 224
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88582b8bb2d0829438c9ec0bafac4f29
-      internalID: -267541650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_106
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 224
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04b9db93ff6000a4c8ef51f5fa068f1b
-      internalID: 1183761052
       vertices: []
       indices: 
       edges: []
@@ -2721,49 +2637,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_128
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 499e84aa3238e754f8fe8569c6704ddb
-      internalID: -1012917112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_129
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6795927b186a0d945bfee69f35b68ce0
-      internalID: -2104623651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_130
+      name: Snowboard_left
       rect:
         serializedVersion: 2
         x: 16
@@ -2784,7 +2658,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_131
+      name: Snowpile_1
       rect:
         serializedVersion: 2
         x: 24
@@ -2805,7 +2679,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_132
+      name: Snowpile_2
       rect:
         serializedVersion: 2
         x: 32
@@ -2821,132 +2695,6 @@ TextureImporter:
       bones: []
       spriteID: 6aa612aba76b37f408f7c204361ec98c
       internalID: -148115753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_133
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f1d485a94978cc49a76cc81512a562e
-      internalID: 1031633602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_134
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99d251db850dcd74297a7f95b1a4aff0
-      internalID: -320817932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_135
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bff650c61f08ba469c0d515aa2d1305
-      internalID: -1835329594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_136
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 982b1e2e89d35d1408fe5f5be2bc38aa
-      internalID: -1610704421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_137
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 171f0e56e57812a408cf5a41b6294b73
-      internalID: -1668809552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_138
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da3af540aece90142853d30826c973ed
-      internalID: -1581866653
       vertices: []
       indices: 
       edges: []
@@ -3393,13 +3141,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_160
+      name: SnowboardPlayer_left
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
+        y: 200
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3535,90 +3283,6 @@ TextureImporter:
       bones: []
       spriteID: 7758ecfc30608b241b7e4e57fb7590b9
       internalID: -1618046022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_167
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 208
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b996e272601da04f87a1f5dbb3d946e
-      internalID: -1895128544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_168
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 208
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2799568c6fe2e5c40b0a96386788b8e8
-      internalID: -619034630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_169
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 208
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d2d9d90651bdc4479ac94243d261e58
-      internalID: -138855988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_170
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 208
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1c4e1f9d55325e4c92acfcc484e82c8
-      internalID: -1287162906
       vertices: []
       indices: 
       edges: []
@@ -4065,27 +3729,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_192
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 696a82a0a18259a41b052fb44688f71c
-      internalID: 671517093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Spritesheet_193
       rect:
         serializedVersion: 2
@@ -4207,90 +3850,6 @@ TextureImporter:
       bones: []
       spriteID: c0f82a309f3a7ee48a71770fae27e92e
       internalID: -340474849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_199
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47666eebc01a2f44c8fb28fea4f726f0
-      internalID: -613425602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_200
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dae9dc15a950014492a8fbe64a8984c
-      internalID: 351971885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_201
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b09df002ecfeee4883ffa66213f9282
-      internalID: 1781761079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_202
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f660107f5da061f44a4fc7be6ba0f697
-      internalID: -1351656028
       vertices: []
       indices: 
       edges: []
@@ -21556,9 +21115,16 @@ TextureImporter:
       Plane_2: -1808280231
       PlayerPlane_1: 2024959511
       PlayerPlane_2: -533248765
+      SnowboardPlayer_left: 2073012007
+      SnowboardPlayer_right: -903683684
+      SnowboardPlayer_straight: 1604515102
+      Snowboard_left: -1023308311
+      Snowboard_right: 1112612151
+      Snowboard_straight: -1126397152
+      Snowpile_1: 1409005355
+      Snowpile_2: -148115753
       Spritesheet_1: -1871494695
       Spritesheet_10: -906912922
-      Spritesheet_100: -84305045
       Spritesheet_1000: -83906041
       Spritesheet_1001: 394486321
       Spritesheet_1002: -942678401
@@ -21569,7 +21135,6 @@ TextureImporter:
       Spritesheet_1007: 639121945
       Spritesheet_1008: -548144133
       Spritesheet_1009: -1412154516
-      Spritesheet_101: 1376338743
       Spritesheet_1010: -1655919166
       Spritesheet_1011: 1235514728
       Spritesheet_1012: 1576780060
@@ -21585,7 +21150,6 @@ TextureImporter:
       Spritesheet_1021: -1986439539
       Spritesheet_1022: 2116945097
       Spritesheet_1023: -1741946233
-      Spritesheet_103: 1769160671
       Spritesheet_104: -1141043841
       Spritesheet_105: -267541650
       Spritesheet_106: 1183761052
@@ -21615,9 +21179,6 @@ TextureImporter:
       Spritesheet_128: -1012917112
       Spritesheet_129: -2104623651
       Spritesheet_13: -364971681
-      Spritesheet_130: -1023308311
-      Spritesheet_131: 1409005355
-      Spritesheet_132: -148115753
       Spritesheet_133: 1031633602
       Spritesheet_134: -320817932
       Spritesheet_135: -1835329594
@@ -21648,7 +21209,6 @@ TextureImporter:
       Spritesheet_158: 1975877438
       Spritesheet_159: 1704888596
       Spritesheet_16: -813194113
-      Spritesheet_160: 2073012007
       Spritesheet_161: -293432351
       Spritesheet_162: 354670613
       Spritesheet_163: -347505961
@@ -22527,7 +22087,6 @@ TextureImporter:
       Spritesheet_957: 77498199
       Spritesheet_958: -171106375
       Spritesheet_959: -15866501
-      Spritesheet_96: 1604515102
       Spritesheet_960: 733603772
       Spritesheet_961: 1139754429
       Spritesheet_962: -461554841
@@ -22538,7 +22097,6 @@ TextureImporter:
       Spritesheet_967: 1682459065
       Spritesheet_968: 1914730808
       Spritesheet_969: 1129164600
-      Spritesheet_97: -903683684
       Spritesheet_970: -432719076
       Spritesheet_971: -1467157750
       Spritesheet_972: -153072457
@@ -22549,7 +22107,6 @@ TextureImporter:
       Spritesheet_977: 1592081167
       Spritesheet_978: -61260415
       Spritesheet_979: 751655749
-      Spritesheet_98: -1126397152
       Spritesheet_980: 415504171
       Spritesheet_981: -564060393
       Spritesheet_982: -612508565
@@ -22560,7 +22117,6 @@ TextureImporter:
       Spritesheet_987: 145570820
       Spritesheet_988: 2059749886
       Spritesheet_989: -1232608525
-      Spritesheet_99: 1112612151
       Spritesheet_990: -1664571533
       Spritesheet_991: -1603079953
       Spritesheet_992: 1412375797
@@ -22571,6 +22127,9 @@ TextureImporter:
       Spritesheet_997: 1534455281
       Spritesheet_998: 917513707
       Spritesheet_999: 1024026834
+      Tree_big: 1769160671
+      Tree_medium: 1376338743
+      Tree_small: -84305045
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
