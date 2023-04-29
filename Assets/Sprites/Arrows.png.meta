@@ -141,7 +141,7 @@ TextureImporter:
       name: Arrow_down_right
       rect:
         serializedVersion: 2
-        x: 4
+        x: 8
         y: 4
         width: 4
         height: 4
@@ -162,7 +162,7 @@ TextureImporter:
       name: Arrow_down_left
       rect:
         serializedVersion: 2
-        x: 8
+        x: 12
         y: 4
         width: 4
         height: 4
@@ -204,7 +204,7 @@ TextureImporter:
       name: Arrow_up_right
       rect:
         serializedVersion: 2
-        x: 4
+        x: 8
         y: 0
         width: 4
         height: 4
@@ -225,7 +225,7 @@ TextureImporter:
       name: Arrow_up_left
       rect:
         serializedVersion: 2
-        x: 8
+        x: 12
         y: 0
         width: 4
         height: 4
@@ -238,6 +238,48 @@ TextureImporter:
       bones: []
       spriteID: 4a7678df2b4d47cce8f84d46ec4557df
       internalID: 355925870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_right
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e364cb4e17739716c8bc3ca97c51d208
+      internalID: 227428988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_left
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e36a680535cce2ea461daaedfdab24
+      internalID: -1371185366
       vertices: []
       indices: 
       edges: []
@@ -256,6 +298,8 @@ TextureImporter:
       Arrow_down: -1281505344
       Arrow_down_left: -1654618503
       Arrow_down_right: 1082962094
+      Arrow_left: -1371185366
+      Arrow_right: 227428988
       Arrow_up: -1690675700
       Arrow_up_left: 355925870
       Arrow_up_right: -1421300670

@@ -74,3 +74,4 @@ crashlytics-build.properties
 # VSCode and Visual Strudio
 .vscode/
 .vsconfig
+NuGet/
