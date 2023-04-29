@@ -75,3 +75,15 @@ crashlytics-build.properties
 .vscode/
 .vsconfig
 NuGet/
+
+#LMMS
+Assets/Audio/plugins/
+Assets/Audio/presets/
+Assets/Audio/samples/
+Assets/Audio/templates/
+Assets/Audio/samples.meta
+Assets/Audio/templates.meta
+Assets/Audio/plugins.meta
+Assets/Audio/presets.meta
+Assets/Audio/recover.*
+Assets/Audio/*.bak*

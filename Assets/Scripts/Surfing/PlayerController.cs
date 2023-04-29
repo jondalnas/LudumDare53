@@ -34,6 +34,14 @@ namespace Surfing {
 				game.Loose();
 			}
 
+			if (_balance - game.targetBalance < -0.1f) {
+				_anim.SetTrigger("LeanLeft");
+			}else if (_balance - game.targetBalance > 0.1f) {
+				_anim.SetTrigger("LeanRight");
+			} else {
+				_anim.SetTrigger("Stabilize");
+			}
+
 			balanceBar.Value = _balance;
 		}
 
