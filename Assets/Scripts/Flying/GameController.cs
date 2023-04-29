@@ -21,17 +21,28 @@ namespace Flying {
 
 		private Score _score;
 
+		public GameObject cloud;
+		public float cloudsPerSecond = 3;
+		private float _timeToNextCloud;
+
 		void Start() {
 			_score = FindAnyObjectByType<Score>();
 		}
 
 		void Update() {
+			_timeToNextCloud -= Time.deltaTime;
+			if (_timeToNextCloud < 0) {
+				Instantiate(cloud, new Vector3(100, player.maxPosition * Random.Range(-1f, 1f), 1), Quaternion.identity);
+
+				_timeToNextCloud = 1 / cloudsPerSecond * Random.Range(0.5f, 1.5f);
+			}
+
 			_timeToNextSpwan -= Time.deltaTime;
-			if (_timeToNextSpwan > 0) return;
+			if (_timeToNextSpwan < 0) {
+				Spwan();
 
-			Spwan();
-
-			_timeToNextSpwan = 1 / spawnsPerSecond * Random.Range(0.5f, 1.5f);
+				_timeToNextSpwan = 1 / spawnsPerSecond * Random.Range(0.5f, 1.5f);
+			}
 		}
 
 		private void Spwan() {
