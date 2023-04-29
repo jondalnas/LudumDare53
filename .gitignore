@@ -74,6 +74,7 @@ crashlytics-build.properties
 # VSCode and Visual Strudio
 .vscode/
 .vsconfig
+.gitignore
 
 #LMMS
 Assets/Audio/plugins/
