@@ -4422,7 +4422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_356
+      name: Water_drop
       rect:
         serializedVersion: 2
         x: 32
@@ -16501,7 +16501,6 @@ TextureImporter:
       Spritesheet_353: 361068493
       Spritesheet_354: -185199391
       Spritesheet_355: 570566596
-      Spritesheet_356: 793221942
       Spritesheet_357: 216547528
       Spritesheet_358: 455842076
       Spritesheet_359: -1916753195
@@ -17213,6 +17212,7 @@ TextureImporter:
       Tree_big: 1769160671
       Tree_medium: 1376338743
       Tree_small: -84305045
+      Water_drop: 793221942
       Wave_1: 315372197
       Wave_2: 1189237349
       Wave_3: 497779951
