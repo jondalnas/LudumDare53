@@ -645,8 +645,8 @@ MonoBehaviour:
   balanceBar: {fileID: 1508348037}
   game: {fileID: 408127158}
   balanceSpeed: 0.33
-  offBalanceSpeed: 0.33
-  falloff: 0.2
+  offBalanceSpeed: 0.1
+  falloff: 0.3
   onWaveMovement: 30
 --- !u!4 &1952845464
 Transform:

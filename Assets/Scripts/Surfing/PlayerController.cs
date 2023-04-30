@@ -13,7 +13,7 @@ namespace Surfing {
 		public GameController game;
 
 		public float balanceSpeed = 0.33f;
-		public float offBalanceSpeed = 0.33f;
+		public float offBalanceSpeed = 0.001f;
 
 		public float falloff = 0.2f;
 
@@ -32,15 +32,17 @@ namespace Surfing {
 
 			_balance += _balanceMove * balanceSpeed * Time.deltaTime;
 
-			_balance += (_balance - game.targetBalance) * offBalanceSpeed * Time.deltaTime;
+			_balance += (_balance - game.targetBalance > 0 ? 1 : -1) * offBalanceSpeed * Time.deltaTime;
+
+			if (_balance < 0 || _balance > 1) game.Loose();
 
 			if (Mathf.Abs(_balance - game.targetBalance) > falloff) {
 				game.Loose();
 			}
 
-			if (_balance - game.targetBalance < -0.1f) {
+			if (_balance - game.targetBalance < -falloff * 0.5f) {
 				_anim.SetTrigger("LeanLeft");
-			}else if (_balance - game.targetBalance > 0.1f) {
+			}else if (_balance - game.targetBalance > falloff * 0.5f) {
 				_anim.SetTrigger("LeanRight");
 			} else {
 				_anim.SetTrigger("Stabilize");
