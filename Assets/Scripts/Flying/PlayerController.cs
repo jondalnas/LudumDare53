@@ -23,6 +23,7 @@ namespace Flying {
 		}
 
 		void Update() {
+			if (!game.IsInGame()) return;
 			_position += _positionDelta * speed * Time.deltaTime;
 
 			if (_position < -maxPosition) {
@@ -46,6 +47,10 @@ namespace Flying {
 
 		public void OnMove(InputValue value) {
 			_positionDelta = value.Get<Vector2>().y;
+		}
+
+		public void StartGame() {
+			game.StartGame();
 		}
 	}
 }
