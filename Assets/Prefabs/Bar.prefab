@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1690675700, guid: 1fffc00c0fc265a1585a5ea84860155d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.77254903, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -160,8 +160,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8a8950274bb0f99df8257fe733e1fc32, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -468609385, guid: f5817288bf783234484b06b23ae29ba2, type: 3}
+  m_Color: {r: 0.77254903, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -193,12 +193,10 @@ MonoBehaviour:
   arrowDownRight: {fileID: 1082962094, guid: 1fffc00c0fc265a1585a5ea84860155d, type: 3}
   insideArrow: {fileID: 6746945495621069333}
   outsideArrow: {fileID: 6746945493823735766}
-  insideWidth: 28
-  insideHeight: 13
-  outsideWidth: 14
+  insideWidth: 24
+  insideHeight: 12
+  outsideWidth: 10
   outsideHeight: 5
-  targetValue: 0
-  value: 0
 --- !u!1 &6746945495621069332
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +271,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1281505344, guid: 1fffc00c0fc265a1585a5ea84860155d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.77254903, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
