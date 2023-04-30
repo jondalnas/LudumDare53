@@ -75,6 +75,7 @@ crashlytics-build.properties
 .vscode/
 .vsconfig
 NuGet/
+.editorconfig
 
 #LMMS
 Assets/Audio/plugins/

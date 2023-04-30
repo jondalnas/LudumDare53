@@ -9,7 +9,7 @@ public class Score : MonoBehaviour {
 	public float scoreChange = 10;
 
 	public float hitPenalty = 10;
-	public float hitTimePenalty = 0.5f;
+	public float invTime = 0.5f;
 	private float _time;
 
 
@@ -21,8 +21,10 @@ public class Score : MonoBehaviour {
 	}
 
 	public void GotHit() {
+		if (_time > 0) return;
+
 		SCORE -= hitPenalty;
-		_time = hitTimePenalty;
+		_time = invTime;
 		LIVES--;
 	}
 }
