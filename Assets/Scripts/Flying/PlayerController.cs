@@ -15,8 +15,11 @@ namespace Flying {
 
 		private BoxCollider2D _col;
 
+		private Animator _anim;
+
 		void Start() {
 			_col = GetComponent<BoxCollider2D>();
+			_anim = GetComponent<Animator>();
 		}
 
 		void Update() {
@@ -38,7 +41,7 @@ namespace Flying {
 		}
 
 		public void Hit() {
-
+			_anim.SetTrigger("Hit");
 		}
 
 		public void OnMove(InputValue value) {

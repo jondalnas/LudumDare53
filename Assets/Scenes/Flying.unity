@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 35412498}
   - component: {fileID: 35412497}
   - component: {fileID: 35412499}
+  - component: {fileID: 35412500}
   m_Layer: 0
   m_Name: Player Plane
   m_TagString: Untagged
@@ -281,6 +282,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 8}
   m_EdgeRadius: 0
+--- !u!95 &35412500
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35412494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd36d43be73eb0e16ae121fcf816f0e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &66634402
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,4 +540,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreChange: 10
   hitPenalty: 10
-  hitTimePenalty: 0.5
+  invTime: 0.5
