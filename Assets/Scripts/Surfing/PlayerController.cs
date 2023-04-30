@@ -40,9 +40,9 @@ namespace Surfing {
 				game.Loose();
 			}
 
-			if (_balance - game.targetBalance < -falloff * 0.5f) {
+			if (_balance - game.targetBalance < -falloff * 0.5f || _balance < falloff * 0.5f) {
 				_anim.SetTrigger("LeanLeft");
-			}else if (_balance - game.targetBalance > falloff * 0.5f) {
+			}else if (_balance - game.targetBalance > falloff * 0.5f || _balance > 1 - falloff * 0.5f) {
 				_anim.SetTrigger("LeanRight");
 			} else {
 				_anim.SetTrigger("Stabilize");
