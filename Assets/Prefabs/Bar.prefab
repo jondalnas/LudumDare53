@@ -193,12 +193,10 @@ MonoBehaviour:
   arrowDownRight: {fileID: 1082962094, guid: 1fffc00c0fc265a1585a5ea84860155d, type: 3}
   insideArrow: {fileID: 6746945495621069333}
   outsideArrow: {fileID: 6746945493823735766}
-  insideWidth: 28
-  insideHeight: 13
-  outsideWidth: 14
+  insideWidth: 24
+  insideHeight: 12
+  outsideWidth: 10
   outsideHeight: 5
-  targetValue: 0
-  value: 0
 --- !u!1 &6746945495621069332
 GameObject:
   m_ObjectHideFlags: 0

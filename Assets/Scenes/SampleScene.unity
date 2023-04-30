@@ -571,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6746945495364830544, guid: d94b8d95b773143c6bf058bd191478f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.86
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6746945495364830544, guid: d94b8d95b773143c6bf058bd191478f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -609,6 +609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 6746945495364830575, guid: d94b8d95b773143c6bf058bd191478f5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -468609385, guid: f5817288bf783234484b06b23ae29ba2, type: 3}
     - target: {fileID: 6746945495364830575, guid: d94b8d95b773143c6bf058bd191478f5, type: 3}
       propertyPath: m_Color.b
       value: 0
