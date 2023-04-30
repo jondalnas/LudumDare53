@@ -7,9 +7,11 @@ namespace Flying {
 		public float speed = 144;
 
 		private Animator _anim;
+		private AudioSource _audio;
 
 		void Start() {
 			_anim = GetComponent<Animator>();
+			_audio = GetComponent<AudioSource>();
 		}
 
 		void Update() {
@@ -22,6 +24,7 @@ namespace Flying {
 			Destroy(GetComponent<Collider2D>());
 
 			_anim.SetTrigger("Dead");
+			_audio.Play();
 		}
 
 		public void Destroy() {
