@@ -19,12 +19,16 @@ namespace Surfing {
 
 		private Animator _anim;
 
+		public float onWaveMovement = 30;
+
 		void Start() {
 			_anim = GetComponent<Animator>();
 		}
 
 		void Update() {
 			if (!game.InGame()) return;
+
+			transform.position = new Vector3(onWaveMovement * (game.targetBalance - 0.5f), transform.position.y, transform.position.z);
 
 			_balance += _balanceMove * balanceSpeed * Time.deltaTime;
 
