@@ -31,7 +31,7 @@ namespace Skydiving {
 			if (!_checkCollision) return;
 
 			ContactFilter2D filter = new();
-			filter.SetLayerMask(LayerMask.NameToLayer("Player"));
+			filter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
 			filter.useLayerMask = true;
 
 			Collider2D[] res = new Collider2D[1];

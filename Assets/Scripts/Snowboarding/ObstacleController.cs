@@ -22,6 +22,7 @@ namespace Snowboarding {
 		public void CheckCollision() {
 			ContactFilter2D filter = new();
 			filter.SetLayerMask(LayerMask.NameToLayer("Player"));
+			filter.useLayerMask = true;
 
 			Collider2D[] res = new Collider2D[1];
 			if (Physics2D.OverlapCollider(_col, filter, res) > 0) {

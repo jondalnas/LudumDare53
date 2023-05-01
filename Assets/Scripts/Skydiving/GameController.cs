@@ -45,7 +45,7 @@ namespace Skydiving {
 				}
 			}
 
-			Instantiate(spawn, new Vector3(player.posBounds.x * Random.Range(-1f, 1f), 76, -1), Quaternion.identity);
+			Instantiate(spawn, new Vector3(player.posBounds.x * Random.Range(-1f, 1f), 76, 0), Quaternion.identity);
 		}
 
 		public void Hit() {
