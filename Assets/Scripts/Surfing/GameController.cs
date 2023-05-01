@@ -8,7 +8,7 @@ namespace Surfing {
 			INTRO, OUTRO, IN_GAME, FELL_OFF
 		}
 
-		private GameState state = GameState.IN_GAME;
+		private GameState state = GameState.INTRO;
 
 		public Score score;
 		public BarController balanceBar;
@@ -73,6 +73,10 @@ namespace Surfing {
 
 		public bool InGame() {
 			return state == GameState.IN_GAME;
+		}
+
+		public void StartGame() {
+			state = GameState.IN_GAME;
 		}
 	}
 }

@@ -66,5 +66,9 @@ namespace Surfing {
 		public void GotUp() {
 			game.GotUp();
 		}
+
+		public void StartGame() {
+			game.StartGame();
+		}
 	}
 }
