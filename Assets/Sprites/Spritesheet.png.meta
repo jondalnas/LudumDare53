@@ -789,13 +789,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_43
+      name: Skydiver_left
       rect:
         serializedVersion: 2
         x: 88
-        y: 240
-        width: 8
-        height: 8
+        y: 232
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -805,27 +805,6 @@ TextureImporter:
       bones: []
       spriteID: d698a247f0a46164b8ba735a2e8eeb2e
       internalID: -1268566173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_44
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 240
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb9e0cd3b44b2c14fac21dae3ab18316
-      internalID: -440526488
       vertices: []
       indices: 
       edges: []
@@ -1335,48 +1314,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_75
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 232
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7036173911553ef41b96c68f2570da9f
-      internalID: -544347259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_76
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 232
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a50a6ea4d920e9f42b4893a0fc268efb
-      internalID: -945250446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Plane_medium_from_above
       rect:
         serializedVersion: 2
@@ -1818,13 +1755,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_107
+      name: Skydiver_right
       rect:
         serializedVersion: 2
         x: 88
-        y: 224
-        width: 8
-        height: 8
+        y: 216
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1834,27 +1771,6 @@ TextureImporter:
       bones: []
       spriteID: bcae1c4ae65eba54181f9894b45cda93
       internalID: -139779465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_108
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b7f1d197fb66a9439565955c3109889
-      internalID: 917684840
       vertices: []
       indices: 
       edges: []
@@ -2191,48 +2107,6 @@ TextureImporter:
       bones: []
       spriteID: 6aa612aba76b37f408f7c204361ec98c
       internalID: -148115753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_139
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d6e261cb8ef58946bc5fee7f2a9bbad
-      internalID: -1661590636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_140
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 216
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2192f0b2634442f4eab2ef6ce5acf5f3
-      internalID: -1630406204
       vertices: []
       indices: 
       edges: []
@@ -2784,13 +2658,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_171
+      name: Parachute
       rect:
         serializedVersion: 2
         x: 88
-        y: 208
-        width: 8
-        height: 8
+        y: 200
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2800,27 +2674,6 @@ TextureImporter:
       bones: []
       spriteID: 942e6347557ba4640a02e46dab3b41b1
       internalID: -934743814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_172
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 208
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58e4f7d7b479bb04dba20455983b2cb0
-      internalID: 325054010
       vertices: []
       indices: 
       edges: []
@@ -3304,48 +3157,6 @@ TextureImporter:
       bones: []
       spriteID: c0f82a309f3a7ee48a71770fae27e92e
       internalID: -340474849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_203
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb31d3f73877feb4f9d3592ae08639e8
-      internalID: -429234887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_204
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c00bbd5837e17c46840c0c22cc9eaad
-      internalID: -1100463583
       vertices: []
       indices: 
       edges: []
@@ -14381,6 +14192,7 @@ TextureImporter:
       Cloud_1: -1802941409
       Cloud_2: -1372604001
       Cloud_3: 138060078
+      Parachute: -934743814
       Plane_1: -331867868
       Plane_2: -1808280231
       Plane_big_from_above: -860705029
@@ -14389,6 +14201,8 @@ TextureImporter:
       PlayerPlane_1: 2024959511
       PlayerPlane_2: -533248765
       Skydiver: 1059539861
+      Skydiver_left: -1268566173
+      Skydiver_right: -139779465
       Snow_edge: -293432351
       SnowboardPlayer_left: 2073012007
       SnowboardPlayer_right: -903683684
@@ -14430,7 +14244,6 @@ TextureImporter:
       Spritesheet_104: -1141043841
       Spritesheet_105: -267541650
       Spritesheet_106: 1183761052
-      Spritesheet_107: -139779465
       Spritesheet_108: 917684840
       Spritesheet_109: -1823941806
       Spritesheet_110: 905018340
@@ -14490,7 +14303,6 @@ TextureImporter:
       Spritesheet_169: -138855988
       Spritesheet_17: -1636185987
       Spritesheet_170: -1287162906
-      Spritesheet_171: -934743814
       Spritesheet_172: 325054010
       Spritesheet_173: 1871917391
       Spritesheet_174: -1643358000
@@ -14759,7 +14571,6 @@ TextureImporter:
       Spritesheet_427: 915823905
       Spritesheet_428: 716047771
       Spritesheet_429: 1613492755
-      Spritesheet_43: -1268566173
       Spritesheet_430: -2128855069
       Spritesheet_431: -1896689035
       Spritesheet_432: -574637979

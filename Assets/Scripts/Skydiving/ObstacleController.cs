@@ -10,6 +10,8 @@ namespace Skydiving {
 
 		private Collider2D _col;
 
+		private AudioSource _aud;
+
         public float minSpeed = -10, maxSpeed = 120;
         private float _speed;
 
@@ -21,6 +23,8 @@ namespace Skydiving {
 			_anim = GetComponent<Animator>();
 
 			_col = GetComponentInChildren<BoxCollider2D>();
+
+			_aud = GetComponent<AudioSource>();
 
             _speed = Random.Range(minSpeed, maxSpeed);
         }
@@ -36,6 +40,7 @@ namespace Skydiving {
 
 			Collider2D[] res = new Collider2D[1];
 			if (Physics2D.OverlapCollider(_col, filter, res) > 0) {
+				//_aud.Play();
 				_game.Hit();
 			}
         }

@@ -478,14 +478,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697db36eb01045c1f9e97c0d405f3b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obsticalsPerSecond: 1
-  obsticals:
+  obstaclesPerSecond: 1
+  obstacles:
   - chance: 0.6
-    obstical: {fileID: 3710147534365218066, guid: df4729013d873ea9b82743e08a75c106, type: 3}
+    obstacle: {fileID: 5374457197952360503, guid: 20d923d229702b40db344244cc4bd089, type: 3}
   - chance: 0.4
-    obstical: {fileID: 5374457197952360503, guid: 20d923d229702b40db344244cc4bd089, type: 3}
+    obstacle: {fileID: 3710147534365218066, guid: df4729013d873ea9b82743e08a75c106, type: 3}
   player: {fileID: 17285917}
-  currObsticals: []
+  currObstacles: []
 --- !u!1 &2133939040
 GameObject:
   m_ObjectHideFlags: 0

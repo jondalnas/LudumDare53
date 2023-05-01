@@ -11,9 +11,12 @@ namespace Skydiving {
 
 		private GameController _game;
 
+		private Animator _anim;
+
 		void Start() {
 			_pos = transform.position;
             _game = FindAnyObjectByType<GameController>();
+			_anim = GetComponent<Animator>();
 		}
 
 		void Update() {
@@ -28,11 +31,17 @@ namespace Skydiving {
 		}
 
 		public void GotHit() {
+			_anim.SetTrigger("Hit");
 			Debug.Log("Ouch!");
+		}
+
+		public void StartGame() {
+			_game.StartGame();
 		}
 
 		void OnMove(InputValue value) {
 			_move = value.Get<Vector2>();
+			_anim.SetInteger("Move", _move.x < 0 ? -1 : _move.x > 0 ? 1 : 0);
 		}
 	}
 }
