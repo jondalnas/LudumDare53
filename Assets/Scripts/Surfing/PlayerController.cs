@@ -26,7 +26,7 @@ namespace Surfing {
 		}
 
 		void Update() {
-			if (!game.InGame()) return;
+			if (!game.IsInGame()) return;
 
 			transform.position = new Vector3(onWaveMovement * (game.targetBalance - 0.5f), transform.position.y, transform.position.z);
 

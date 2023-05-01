@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Skydiving {
-	public class GameController : MonoBehaviour {
+	public class GameController : MasterGameController {
 		public float spawnsPerSecond = 1;
 		private float _timeToNextSpwan;
 
@@ -25,7 +25,7 @@ namespace Skydiving {
 			_score = FindAnyObjectByType<Score>();
 		}
 
-		void Update() {
+		public override void UpdateLogic() {
 			_timeToNextSpwan -= Time.deltaTime;
 			if (_timeToNextSpwan < 0) {
 				Spwan();

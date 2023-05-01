@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Flying {
-	public class GameController : MonoBehaviour {
-		private enum GameState {Entry, InGame, Exit};
-		private GameState _state = GameState.Entry;
-
+	public class GameController : MasterGameController {
 		public float spawnsPerSecond = 3;
 		private float _timeToNextSpwan;
 
@@ -32,15 +29,17 @@ namespace Flying {
 			_score = FindAnyObjectByType<Score>();
 		}
 
-		void Update() {
+		public override void Update() {
+			base.Update();
 			_timeToNextCloud -= Time.deltaTime;
 			if (_timeToNextCloud < 0) {
 				Instantiate(cloud, new Vector3(100, player.maxPosition * Random.Range(-1f, 1f), 1), Quaternion.identity);
 
 				_timeToNextCloud = 1 / cloudsPerSecond * Random.Range(0.5f, 1.5f);
 			}
-			if (_state != GameState.InGame) return;
+		}
 
+		public override void UpdateLogic() {
 			_timeToNextSpwan -= Time.deltaTime;
 			if (_timeToNextSpwan < 0) {
 				Spwan();
@@ -73,18 +72,6 @@ namespace Flying {
 			player.Hit();
 
 			_score.GotHit();
-		}
-
-		public void StartGame() {
-			_state = GameState.InGame;
-		}
-
-		public void EndGame() {
-			_state = GameState.Exit;
-		}
-
-		public bool IsInGame() {
-			return _state == GameState.InGame;
 		}
 	}
 }

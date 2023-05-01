@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Snowboarding {
-	public class GameController : MonoBehaviour {
+	public class GameController : MasterGameController {
 		public float obstaclesPerSecond = 1;
 		private float _timeToNextObstacle;
 
@@ -20,21 +20,13 @@ namespace Snowboarding {
 		[HideInInspector]
 		public List<ObstacleController> currObstacles;
 
-		public enum GameState {
-			INTRO, OUTRO, IN_GAME, HIT
-		}
-
-		private GameState _state = GameState.IN_GAME;
-
 		private Score _score;
 
 		void Start() {
 			_score = FindAnyObjectByType<Score>();
 		}
 
-		void Update() {
-			if (_state != GameState.IN_GAME) return;
-
+		public override void UpdateLogic() {
 			_timeToNextObstacle -= Time.deltaTime;
 			if (_timeToNextObstacle > 0) return;
 
@@ -61,7 +53,7 @@ namespace Snowboarding {
 		}
 
 		public void Hit() {
-			_state = GameState.HIT;
+			DamageTaken();
 			player.Hit();
 
 			_score.GotHit();
@@ -72,15 +64,11 @@ namespace Snowboarding {
 		}
 
 		public void GetUp() {
-			_state = GameState.IN_GAME;
+			StartGame();
 
 			foreach (ObstacleController o in currObstacles) {
 				o.Resume();
 			}
-		}
-
-		public bool IsInGame() {
-			return _state == GameState.IN_GAME;
 		}
 	}
 }

@@ -9,11 +9,16 @@ namespace Skydiving {
 		public float playerSpeed = 144;
 		public Vector2 posBounds = new(160/2 - 10*2 - 8, 144/2 - 10*2 - 8);
 
+		private GameController _game;
+
 		void Start() {
 			_pos = transform.position;
+            _game = FindAnyObjectByType<GameController>();
 		}
 
 		void Update() {
+			if (!_game.IsInGame()) return;
+
 			_pos += _move * playerSpeed * Time.deltaTime;
 
 			_pos.x = Mathf.Clamp(_pos.x, -posBounds.x, posBounds.x);
