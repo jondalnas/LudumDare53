@@ -13935,7 +13935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_1010
+      name: Heart
       rect:
         serializedVersion: 2
         x: 144
@@ -14381,6 +14381,7 @@ TextureImporter:
       Cloud_1: -1802941409
       Cloud_2: -1372604001
       Cloud_3: 138060078
+      Heart: -1655919166
       Plane_1: -331867868
       Plane_2: -1808280231
       Plane_big_from_above: -860705029
@@ -14412,7 +14413,6 @@ TextureImporter:
       Spritesheet_1007: 639121945
       Spritesheet_1008: -548144133
       Spritesheet_1009: -1412154516
-      Spritesheet_1010: -1655919166
       Spritesheet_1011: 1235514728
       Spritesheet_1012: 1576780060
       Spritesheet_1013: -531446984
