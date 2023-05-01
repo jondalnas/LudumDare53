@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Surfing {
+
 	public class GameController : MasterGameController {
+
 		public Score score;
 		public BarController balanceBar;
 		public PlayerController player;
@@ -65,5 +67,6 @@ namespace Surfing {
 			targetBalance = 0.5f;
 			player.Reset();
 		}
+
 	}
 }
