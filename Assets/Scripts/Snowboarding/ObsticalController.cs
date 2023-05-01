@@ -10,6 +10,8 @@ namespace Snowboarding {
 
 		private Collider2D _col;
 
+		private AudioSource _aud;
+
 		public virtual void Start() {
 			_game = FindAnyObjectByType<GameController>();
 			_game.currObsticals.Add(this);
@@ -17,6 +19,8 @@ namespace Snowboarding {
 			_anim = GetComponent<Animator>();
 
 			_col = GetComponentInChildren<BoxCollider2D>();
+
+			_aud = GetComponent<AudioSource>();
 		}
 
 		public void CheckCollision() {
@@ -26,6 +30,7 @@ namespace Snowboarding {
 			Collider2D[] res = new Collider2D[1];
 			if (Physics2D.OverlapCollider(_col, filter, res) > 0) {
 				_game.Hit();
+				_aud.Play();
 			}
 		}
 

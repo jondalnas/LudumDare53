@@ -2658,7 +2658,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_161
+      name: Snow_edge
       rect:
         serializedVersion: 2
         x: 8
@@ -2679,13 +2679,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_162
+      name: Snowboard_in_snow
       rect:
         serializedVersion: 2
         x: 16
-        y: 208
+        y: 200
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2700,13 +2700,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_163
+      name: Snowboard_in_air
       rect:
         serializedVersion: 2
         x: 24
-        y: 208
+        y: 200
         width: 8
-        height: 8
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3241,48 +3241,6 @@ TextureImporter:
       bones: []
       spriteID: e5c3ee954e6d37e4fb3a6f148c533a58
       internalID: -1956081143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_194
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ade23db86987c94c9219dd69a6389f8
-      internalID: -1274460454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_195
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 200
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b494f7c11a5ec9e4693e42b2b745928a
-      internalID: 1049938171
       vertices: []
       indices: 
       edges: []
@@ -14431,9 +14389,12 @@ TextureImporter:
       PlayerPlane_1: 2024959511
       PlayerPlane_2: -533248765
       Skydiver: 1059539861
+      Snow_edge: -293432351
       SnowboardPlayer_left: 2073012007
       SnowboardPlayer_right: -903683684
       SnowboardPlayer_straight: 1604515102
+      Snowboard_in_air: -347505961
+      Snowboard_in_snow: 354670613
       Snowboard_left: -1023308311
       Snowboard_right: 1112612151
       Snowboard_straight: -1126397152
@@ -14521,9 +14482,6 @@ TextureImporter:
       Spritesheet_158: 1975877438
       Spritesheet_159: 1704888596
       Spritesheet_16: -813194113
-      Spritesheet_161: -293432351
-      Spritesheet_162: 354670613
-      Spritesheet_163: -347505961
       Spritesheet_164: 818945753
       Spritesheet_165: 1200261967
       Spritesheet_166: -1618046022
