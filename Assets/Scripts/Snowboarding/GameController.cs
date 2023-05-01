@@ -4,21 +4,21 @@ using UnityEngine;
 
 namespace Snowboarding {
 	public class GameController : MonoBehaviour {
-		public float obsticalsPerSecond = 1;
-		private float _timeToNextObstical;
+		public float obstaclesPerSecond = 1;
+		private float _timeToNextObstacle;
 
 		[System.Serializable]
-		public class Obstical {
+		public class Obstacle {
 			public float chance;
-			public GameObject obstical;
+			public GameObject obstacle;
 		}
 
-		public List<Obstical> obsticals;
+		public List<Obstacle> obstacles;
 
 		public PlayerController player;
 
 		[HideInInspector]
-		public List<ObsticalController> currObsticals;
+		public List<ObstacleController> currObstacles;
 
 		public enum GameState {
 			INTRO, OUTRO, IN_GAME, HIT
@@ -35,29 +35,29 @@ namespace Snowboarding {
 		void Update() {
 			if (_state != GameState.IN_GAME) return;
 
-			_timeToNextObstical -= Time.deltaTime;
-			if (_timeToNextObstical > 0) return;
+			_timeToNextObstacle -= Time.deltaTime;
+			if (_timeToNextObstacle > 0) return;
 
-			_timeToNextObstical = Random.Range(0.5f, 1.5f) * 1 / obsticalsPerSecond;
+			_timeToNextObstacle = Random.Range(0.5f, 1.5f) * 1 / obstaclesPerSecond;
 			Spawn();
 		}
 
 		private void Spawn() {
-			GameObject obstical = obsticals[0].obstical;
+			GameObject obstacle = obstacles[0].obstacle;
 
 			float r = Random.value;
-			foreach (Obstical o in obsticals) {
+			foreach (Obstacle o in obstacles) {
 				r -= o.chance;
 
 				if (r < 0) {
-					obstical = o.obstical;
+					obstacle = o.obstacle;
 					break;
 				}
 			}
 
 			float x = Random.Range(-player.maxPosition, player.maxPosition);
 
-			Instantiate(obstical, new Vector3(x, 0, 0), Quaternion.identity);
+			Instantiate(obstacle, new Vector3(x, 0, 0), Quaternion.identity);
 		}
 
 		public void Hit() {
@@ -66,7 +66,7 @@ namespace Snowboarding {
 
 			_score.GotHit();
 
-			foreach (ObsticalController o in currObsticals) {
+			foreach (ObstacleController o in currObstacles) {
 				o.Pause();
 			}
 		}
@@ -74,7 +74,7 @@ namespace Snowboarding {
 		public void GetUp() {
 			_state = GameState.IN_GAME;
 
-			foreach (ObsticalController o in currObsticals) {
+			foreach (ObstacleController o in currObstacles) {
 				o.Resume();
 			}
 		}

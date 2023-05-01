@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Snowboarding {
-	public class SnowpileController : ObsticalController {
+	public class SnowpileController : ObstacleController {
 		public List<Sprite> sprites;
 
 		public override void Start() {

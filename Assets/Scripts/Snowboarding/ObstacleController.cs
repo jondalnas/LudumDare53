@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Snowboarding {
-	public abstract class ObsticalController : MonoBehaviour {
+	public abstract class ObstacleController : MonoBehaviour {
 		private GameController _game;
 
 		private Animator _anim;
@@ -12,7 +12,7 @@ namespace Snowboarding {
 
 		public virtual void Start() {
 			_game = FindAnyObjectByType<GameController>();
-			_game.currObsticals.Add(this);
+			_game.currObstacles.Add(this);
 
 			_anim = GetComponent<Animator>();
 
@@ -32,7 +32,7 @@ namespace Snowboarding {
 		public void Destroy() {
 			Destroy(gameObject);
 
-			_game.currObsticals.Remove(this);
+			_game.currObstacles.Remove(this);
 		}
 
 		public void Pause() {
