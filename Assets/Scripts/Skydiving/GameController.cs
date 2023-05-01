@@ -17,6 +17,8 @@ namespace Skydiving {
 
 		public SpwanChance[] spawnChances;
 
+		public float seekingChance = 0.4f;
+
 		private Score _score;
 
 		void Start() {
@@ -44,8 +46,11 @@ namespace Skydiving {
 					break;
 				}
 			}
-
-			Instantiate(spawn, new Vector3(player.posBounds.x * Random.Range(-1f, 1f), 76, 0), Quaternion.identity);
+			if (seekingChance > Random.value) {
+				Instantiate(spawn, new Vector3(player.transform.position.x, 76, 0), Quaternion.identity);
+			} else {
+				Instantiate(spawn, new Vector3(player.posBounds.x * Random.Range(-1f, 1f), 76, 0), Quaternion.identity);
+			}
 		}
 
 		public void Hit() {
