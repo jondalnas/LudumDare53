@@ -44,6 +44,14 @@ namespace Snowboarding {
 			_game.StartGame();
 		}
 
+		public void End() {
+			_anim.SetTrigger("Exit");
+		}
+
+		public void Next() {
+			_game.Next();
+		}
+
 		public void OnMove(InputValue input) {
 			_playerMove = input.Get<Vector2>().x;
 			_anim.SetInteger("Move", _playerMove < 0 ? -1 : _playerMove > 0 ? 1 : 0);

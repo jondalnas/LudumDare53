@@ -39,6 +39,14 @@ namespace Skydiving {
 			_game.StartGame();
 		}
 
+		public void End() {
+			_anim.SetTrigger("Exit");
+		}
+
+		public void Next() {
+			_game.Next();
+		}
+
 		void OnMove(InputValue value) {
 			_move = value.Get<Vector2>();
 			_anim.SetInteger("Move", _move.x < 0 ? -1 : _move.x > 0 ? 1 : 0);

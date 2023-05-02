@@ -41,8 +41,6 @@ public abstract class MasterGameController : MonoBehaviour {
 
 	public virtual void EndGame() {
 		_state = GameState.OUTRO;
-
-		_game.Next();
 	}
 
 	public void DamageTaken() {
@@ -55,5 +53,9 @@ public abstract class MasterGameController : MonoBehaviour {
 
 	public bool IsNotInCutscene() {
 		return _state == GameState.IN_GAME || _state == GameState.DAMAGE_TAKEN;
+	}
+
+	public void Next() {
+		_game.Next();
 	}
 }

@@ -71,5 +71,11 @@ namespace Snowboarding {
 				o.Resume();
 			}
 		}
+
+		public override void EndGame() {
+			base.EndGame();
+
+			player.End();
+		}
 	}
 }

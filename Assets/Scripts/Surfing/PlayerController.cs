@@ -70,5 +70,13 @@ namespace Surfing {
 		public void StartGame() {
 			game.StartGame();
 		}
+
+		public void End() {
+			_anim.SetTrigger("Exit");
+		}
+
+		public void Next() {
+			game.Next();
+		}
 	}
 }

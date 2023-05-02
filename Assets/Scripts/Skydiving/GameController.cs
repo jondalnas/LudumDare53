@@ -59,5 +59,11 @@ namespace Skydiving {
 
 			_score.GotHit();
 		}
+		
+		public override void EndGame() {
+			base.EndGame();
+
+			player.End();
+		}
 	}
 }

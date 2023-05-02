@@ -7,6 +7,8 @@ public class Game : MonoBehaviour {
     private int _currScene;
 
     void Start() {
+        if (FindObjectsOfType<Game>().Length > 1) Destroy(gameObject);
+
         _currScene = SceneManager.GetActiveScene().buildIndex;
         DontDestroyOnLoad(gameObject);
     }

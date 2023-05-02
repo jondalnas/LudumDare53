@@ -19,7 +19,7 @@ public class Score : MonoBehaviour {
 	private List<Transform> _lives = new();
 
 	void Start() {
-		if (SceneManager.GetActiveScene().buildIndex == 4) {
+		if (SceneManager.GetActiveScene().buildIndex > 5) {
 			_scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<TextMeshProUGUI>();
 
 			return;
@@ -34,7 +34,7 @@ public class Score : MonoBehaviour {
 	void Update() {
 		_scoreText.text = ((int) SCORE) + "00";
 
-		if (SceneManager.GetActiveScene().buildIndex == 4) return;
+		if (SceneManager.GetActiveScene().buildIndex > 5) return;
 
 		_time -= Time.deltaTime;
 		if (_time > 0) return;

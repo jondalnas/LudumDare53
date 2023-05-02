@@ -52,5 +52,13 @@ namespace Flying {
 		public void StartGame() {
 			game.StartGame();
 		}
+
+		public void End() {
+			_anim.SetTrigger("Finish");
+		}
+
+		public void Next() {
+			game.Next();
+		}
 	}
 }

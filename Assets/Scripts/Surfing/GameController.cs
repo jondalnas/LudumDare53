@@ -69,5 +69,10 @@ namespace Surfing {
 			player.Reset();
 		}
 
+		public override void EndGame() {
+			base.EndGame();
+
+			player.End();
+		}
 	}
 }
