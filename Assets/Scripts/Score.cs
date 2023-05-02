@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour {
 	public static float SCORE;
@@ -18,6 +19,12 @@ public class Score : MonoBehaviour {
 	private List<Transform> _lives = new();
 
 	void Start() {
+		if (SceneManager.GetActiveScene().buildIndex == 4) {
+			_scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<TextMeshProUGUI>();
+
+			return;
+		}
+
 		_scoreText = GameObject.FindGameObjectWithTag("Score").transform.Find("Score").GetComponent<TextMeshProUGUI>();
 		foreach (Transform child in GameObject.FindGameObjectWithTag("Lives").transform) {
 			_lives.Add(child);
@@ -26,6 +33,8 @@ public class Score : MonoBehaviour {
 
 	void Update() {
 		_scoreText.text = ((int) SCORE) + "00";
+
+		if (SceneManager.GetActiveScene().buildIndex == 4) return;
 
 		_time -= Time.deltaTime;
 		if (_time > 0) return;

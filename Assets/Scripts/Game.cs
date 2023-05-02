@@ -14,7 +14,7 @@ public class Game : MonoBehaviour {
 	public void Next() {
         _currScene++;
 
-        if (_currScene > SceneManager.sceneCountInBuildSettings) _currScene = 0;
+        if (_currScene > 5) _currScene = 0;
 
         SceneManager.LoadScene(_currScene);
     }
