@@ -8,6 +8,9 @@ public class Game : MonoBehaviour {
 
 	private AudioSource _aud;
 
+    public int numPasses = 3;
+    private int _pass;
+
     void Start() {
         if (FindObjectsOfType<Game>().Length > 1) Destroy(gameObject);
 
@@ -20,6 +23,14 @@ public class Game : MonoBehaviour {
 	public void Next() {
         _currScene++;
 
+        if (_currScene == 5) {
+            _pass++;
+
+            if (_pass < numPasses) {
+                _currScene = 1;
+            }
+        }
+
 		if (_currScene > 4) {
 			StopAudio();
 		}
@@ -28,8 +39,6 @@ public class Game : MonoBehaviour {
             Reset();
             return;
         }
-
-
 
         SceneManager.LoadScene(_currScene);
     }

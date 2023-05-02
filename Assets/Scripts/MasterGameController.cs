@@ -21,6 +21,7 @@ public abstract class MasterGameController : MonoBehaviour {
 
 	public virtual void Update() {
 		if (IsNotInCutscene()) {
+			Debug.Log(_timer);
 			_timer += Time.deltaTime;
 
 			if (_timer > _gameLength) {
