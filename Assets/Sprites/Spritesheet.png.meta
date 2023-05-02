@@ -5493,13 +5493,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_608
+      name: Ruined_package
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 8
-        height: 8
+        y: 88
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5509,27 +5509,6 @@ TextureImporter:
       bones: []
       spriteID: dc7adc549086d60488ffe92ca4d90e80
       internalID: 1368225410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_609
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c7b3240859db6f4d91cf584009a18ce
-      internalID: 381896092
       vertices: []
       indices: 
       edges: []
@@ -6160,48 +6139,6 @@ TextureImporter:
       bones: []
       spriteID: 475c14773a85e7b4ea0acb4c0b5308d5
       internalID: -295964927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_640
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7476705cefca0ed44b302149240a4286
-      internalID: 1747665491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_641
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 88
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a023c5c4127bac49bdedd03e569d853
-      internalID: -388345098
       vertices: []
       indices: 
       edges: []
@@ -12731,6 +12668,7 @@ TextureImporter:
       Plane_small_from_above: 87243484
       PlayerPlane_1: 2024959511
       PlayerPlane_2: -533248765
+      Ruined_package: 1368225410
       Skydiver: 1059539861
       Snow_edge: -293432351
       SnowboardPlayer_left: 2073012007
@@ -13295,7 +13233,6 @@ TextureImporter:
       Spritesheet_605: 997343475
       Spritesheet_606: -494016182
       Spritesheet_607: -1980482616
-      Spritesheet_608: 1368225410
       Spritesheet_609: 381896092
       Spritesheet_61: 2007504545
       Spritesheet_610: -462757070

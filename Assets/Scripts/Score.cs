@@ -58,7 +58,7 @@ public class Score : MonoBehaviour {
 	}
 
 	public void Die() {
-
+		SceneManager.LoadScene(6);
 	}
 
 	public void Reset() {
