@@ -19,7 +19,7 @@ public class Score : MonoBehaviour {
 	private List<Transform> _lives = new();
 
 	void Start() {
-		if (SceneManager.GetActiveScene().buildIndex > 5) {
+		if (SceneManager.GetActiveScene().buildIndex >= 5) {
 			_scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<TextMeshProUGUI>();
 
 			return;
@@ -34,7 +34,25 @@ public class Score : MonoBehaviour {
 	void Update() {
 		_scoreText.text = ((int) SCORE) + "00";
 
-		if (SceneManager.GetActiveScene().buildIndex > 5) return;
+		if (SceneManager.GetActiveScene().buildIndex >= 5) return;
+
+		if (LIVES == 0) {
+			_lives[0].gameObject.SetActive(false);
+			_lives[1].gameObject.SetActive(false);
+			_lives[2].gameObject.SetActive(false);
+		} else if (LIVES == 1) {
+			_lives[0].gameObject.SetActive(true);
+			_lives[1].gameObject.SetActive(false);
+			_lives[2].gameObject.SetActive(false);
+		} else if (LIVES == 2) {
+			_lives[0].gameObject.SetActive(true);
+			_lives[1].gameObject.SetActive(true);
+			_lives[2].gameObject.SetActive(false);
+		} else if (LIVES == 3) {
+			_lives[0].gameObject.SetActive(true);
+			_lives[1].gameObject.SetActive(true);
+			_lives[2].gameObject.SetActive(true);
+		}
 
 		_time -= Time.deltaTime;
 		if (_time > 0) return;
@@ -53,8 +71,6 @@ public class Score : MonoBehaviour {
 			Die();
 			return;
 		}
-
-		_lives[LIVES].gameObject.SetActive(false);
 	}
 
 	public void Die() {
