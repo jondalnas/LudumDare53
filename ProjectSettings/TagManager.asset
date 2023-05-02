@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Score
   - Lives
+  - Music
   layers:
   - Default
   - TransparentFX

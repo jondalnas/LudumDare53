@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour {
     private int _currScene;
 
+	private AudioSource _aud;
+
     void Start() {
         if (FindObjectsOfType<Game>().Length > 1) Destroy(gameObject);
+
+		_aud = GetComponent<AudioSource>();
 
         _currScene = SceneManager.GetActiveScene().buildIndex;
         DontDestroyOnLoad(gameObject);
@@ -16,10 +20,16 @@ public class Game : MonoBehaviour {
 	public void Next() {
         _currScene++;
 
-        if (_currScene > 5) {
+		if (_currScene > 4) {
+			StopAudio();
+		}
+
+		if (_currScene > 5) {
             Reset();
             return;
         }
+
+
 
         SceneManager.LoadScene(_currScene);
     }
@@ -29,4 +39,13 @@ public class Game : MonoBehaviour {
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
+
+	public void Fail() {
+		StopAudio();
+		SceneManager.LoadScene(6);
+	}
+
+	public void StopAudio() {
+		_aud.Stop();
+	}
 }

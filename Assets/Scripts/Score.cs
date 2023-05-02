@@ -74,7 +74,7 @@ public class Score : MonoBehaviour {
 	}
 
 	public void Die() {
-		SceneManager.LoadScene(6);
+		FindAnyObjectByType<Game>().Fail();
 	}
 
 	public static void Reset() {
