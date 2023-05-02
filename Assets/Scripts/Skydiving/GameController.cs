@@ -21,7 +21,8 @@ namespace Skydiving {
 
 		private Score _score;
 
-		void Start() {
+		public override void Start() {
+			base.Start();
 			_score = FindAnyObjectByType<Score>();
 		}
 

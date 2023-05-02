@@ -13200,64 +13200,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_975
+      name: Button
       rect:
         serializedVersion: 2
         x: 120
-        y: 8
-        width: 8
-        height: 8
+        y: 0
+        width: 24
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 855eea77450080c49ab9d7857bdec4f5
       internalID: 1155476646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_976
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9d22c667fc44064bacfaca31a8643f3
-      internalID: 1945142755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_977
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5389da64cba9d774fbb464a4114b9e04
-      internalID: 1592081167
       vertices: []
       indices: 
       edges: []
@@ -13872,69 +13830,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_1007
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6407fe1ed0766644812844317436d5f
-      internalID: 639121945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_1008
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76b111d61f4371642a86d61cb1bb6340
-      internalID: -548144133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_1009
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cd8908baa8071a4485485fa2c00ffbc
-      internalID: -1412154516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Heart
       rect:
         serializedVersion: 2
@@ -14378,6 +14273,7 @@ TextureImporter:
       Bird_2: 587496584
       Bird_from_above: -364971681
       Bird_small_from_above: 481595916
+      Button: 1155476646
       Cloud_1: -1802941409
       Cloud_2: -1372604001
       Cloud_3: 138060078
@@ -15355,7 +15251,6 @@ TextureImporter:
       Spritesheet_972: -153072457
       Spritesheet_973: -1396236803
       Spritesheet_974: -1998177271
-      Spritesheet_975: 1155476646
       Spritesheet_976: 1945142755
       Spritesheet_977: 1592081167
       Spritesheet_978: -61260415
