@@ -6,7 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Main.unity
+    guid: ba351133a9963b7f0bf0d9624587b967
+  - enabled: 1
+    path: Assets/Scenes/Flying.unity
+    guid: 6973fc49fd2253803828e1f72226b4a7
+  - enabled: 1
+    path: Assets/Scenes/Skydiving.unity
+    guid: 08aac24fbe20f768c8f9d8a3b5d457aa
+  - enabled: 1
+    path: Assets/Scenes/Surfing.unity
+    guid: df2cb34775b72ef1c92f0f59e8303d8b
+  - enabled: 1
+    path: Assets/Scenes/Snowboarding.unity
+    guid: 9ddfc226781c656cf9387c80e03eadf0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: adbf5cc246ff184e09cb54fdff0255fb, type: 2}

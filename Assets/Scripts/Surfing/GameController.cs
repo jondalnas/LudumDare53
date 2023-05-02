@@ -20,7 +20,8 @@ namespace Surfing {
 
 		public float turnChancePerSec = 0.8f;
 
-		void Start() {
+		public override void Start() {
+			base.Start();
 			score = GameObject.FindAnyObjectByType<Score>();
 		}
 

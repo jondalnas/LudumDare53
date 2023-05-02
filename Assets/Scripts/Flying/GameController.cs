@@ -25,7 +25,8 @@ namespace Flying {
 		public float cloudsPerSecond = 3;
 		private float _timeToNextCloud;
 
-		void Start() {
+		public override void Start() {
+			base.Start();
 			_score = FindAnyObjectByType<Score>();
 		}
 

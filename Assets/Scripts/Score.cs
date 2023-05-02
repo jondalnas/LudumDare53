@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour {
 	public static float SCORE;
@@ -12,8 +14,19 @@ public class Score : MonoBehaviour {
 	public float invTime = 0.5f;
 	private float _time;
 
+	private TextMeshProUGUI _scoreText;
+	private List<Transform> _lives = new();
+
+	void Start() {
+		_scoreText = GameObject.FindGameObjectWithTag("Score").transform.Find("Score").GetComponent<TextMeshProUGUI>();
+		foreach (Transform child in GameObject.FindGameObjectWithTag("Lives").transform) {
+			_lives.Add(child);
+		}
+	}
 
 	void Update() {
+		_scoreText.text = ((int) SCORE) + "00";
+
 		_time -= Time.deltaTime;
 		if (_time > 0) return;
 
@@ -26,5 +39,25 @@ public class Score : MonoBehaviour {
 		SCORE -= hitPenalty;
 		_time = invTime;
 		LIVES--;
+
+		if (LIVES < 0) {
+			Die();
+			return;
+		}
+
+		_lives[LIVES].gameObject.SetActive(false);
+	}
+
+	public void Die() {
+
+	}
+
+	public void Reset() {
+		SCORE = 0;
+		LIVES = 3;
+
+		foreach (Transform life in _lives) {
+			life.gameObject.SetActive(true);
+		}
 	}
 }

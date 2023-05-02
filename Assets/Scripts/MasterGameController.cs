@@ -7,9 +7,27 @@ public abstract class MasterGameController : MonoBehaviour {
 		INTRO, OUTRO, IN_GAME, DAMAGE_TAKEN
 	}
 
+	private const float _gameLength = 10;
+	private float _timer;
+
 	private GameState _state = GameState.INTRO;
 
+	[HideInInspector]
+	public Game _game;
+
+	public virtual void Start() {
+		_game = FindAnyObjectByType<Game>();
+	}
+
 	public virtual void Update() {
+		if (IsNotInCutscene()) {
+			_timer += Time.deltaTime;
+
+			if (_timer > _gameLength) {
+				EndGame();
+			}
+		}
+
 		if (!IsInGame()) return;
 
         UpdateLogic();
@@ -21,8 +39,10 @@ public abstract class MasterGameController : MonoBehaviour {
 		_state = GameState.IN_GAME;
 	}
 
-	public void EndGame() {
+	public virtual void EndGame() {
 		_state = GameState.OUTRO;
+
+		_game.Next();
 	}
 
 	public void DamageTaken() {
@@ -31,5 +51,9 @@ public abstract class MasterGameController : MonoBehaviour {
 
 	public bool IsInGame() {
 		return _state == GameState.IN_GAME;
+	}
+
+	public bool IsNotInCutscene() {
+		return _state == GameState.IN_GAME || _state == GameState.DAMAGE_TAKEN;
 	}
 }
