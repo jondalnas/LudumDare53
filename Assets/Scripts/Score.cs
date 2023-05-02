@@ -77,12 +77,8 @@ public class Score : MonoBehaviour {
 		SceneManager.LoadScene(6);
 	}
 
-	public void Reset() {
+	public static void Reset() {
 		SCORE = 0;
 		LIVES = 3;
-
-		foreach (Transform life in _lives) {
-			life.gameObject.SetActive(true);
-		}
 	}
 }

@@ -11,4 +11,8 @@ public class Finnish : MonoBehaviour {
     public void Next() {
         _game.Next();
     }
+
+    public void Reset() {
+        _game.Reset();
+    }
 }

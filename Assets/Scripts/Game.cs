@@ -16,8 +16,17 @@ public class Game : MonoBehaviour {
 	public void Next() {
         _currScene++;
 
-        if (_currScene > 5) _currScene = 0;
+        if (_currScene > 5) {
+            Reset();
+            return;
+        }
 
         SceneManager.LoadScene(_currScene);
+    }
+
+    public void Reset() {
+        Score.Reset();
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
 }
