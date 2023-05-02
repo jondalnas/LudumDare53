@@ -70,6 +70,8 @@ namespace Flying {
 		}
 
 		public void HitEnemy() {
+			if (!IsInGame()) return;
+
 			player.Hit();
 
 			_score.GotHit();

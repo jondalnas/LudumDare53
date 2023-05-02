@@ -55,6 +55,8 @@ namespace Skydiving {
 		}
 
 		public void Hit() {
+			if (!IsInGame()) return;
+
 			player.GotHit();
 
 			_score.GotHit();

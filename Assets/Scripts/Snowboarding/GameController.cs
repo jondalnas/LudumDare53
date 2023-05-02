@@ -54,6 +54,8 @@ namespace Snowboarding {
 		}
 
 		public void Hit() {
+			if (!IsInGame()) return;
+
 			DamageTaken();
 			player.Hit();
 
