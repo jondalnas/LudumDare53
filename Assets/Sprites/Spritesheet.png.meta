@@ -1083,7 +1083,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_64
+      name: Package
       rect:
         serializedVersion: 2
         x: 0
@@ -14192,6 +14192,7 @@ TextureImporter:
       Cloud_1: -1802941409
       Cloud_2: -1372604001
       Cloud_3: 138060078
+      Package: 574424117
       Parachute: -934743814
       Plane_1: -331867868
       Plane_2: -1808280231
@@ -14799,7 +14800,6 @@ TextureImporter:
       Spritesheet_637: 1067151387
       Spritesheet_638: -756868237
       Spritesheet_639: -295964927
-      Spritesheet_64: 574424117
       Spritesheet_640: 1747665491
       Spritesheet_641: -388345098
       Spritesheet_642: 533828745
